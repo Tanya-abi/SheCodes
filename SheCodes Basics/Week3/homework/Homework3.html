@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Givers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body{
+           background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+           padding-left: 40px;
+           padding-right: 40px;
+
+        }
+        h1{
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 50px;
+
+        }
+        h3{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+        span{
+            font-size: small;
+        }
+        img{
+            margin: 0 auto;
+            display: inline;
+            border-radius: 50%;
+            padding-left: 5%;
+            padding-right: 5%;
+           
+        }
+
+        div{
+            text-align: justify;
+            line-height: normal;
+        }
+        #giver{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 5px 5px 5px 5px #caccce;
+
+        }
+        #help{
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 5px 5px 5px 5px #caccce;;
+        }
+        li{
+            margin: 0 auto;
+            padding-right: 2%;
+            list-style: none;
+            display: inline;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: white;
+
+        }
+        footer{
+            text-align: center;
+        }
+        button{
+            color: white;
+            background-color:#bdd5f1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            transition: 200ms ease-in-out;
+            font-family: 'Times';
+            font-weight:bolder;
+            font-size: 14px;
+        }
+        button:hover {
+            color: black;
+            background: white;
+            border: 1px solid #E0E9F3;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <h1>
+        Helping Hand Foundation
+    </h1>
+
+    <h3><em>It is not how much we give, but how much love we put into giving.<br>
+        <span>- Mother Teresa</span></em>
+    </h3>
+    
+    <hr>
+
+
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/265/original/charitable-people-with-donations_18591-75292_%281%29.jpg?1707847452" width="250">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/266/original/GettyImages_1060748862.0.jpg?1707847468" width="250">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/267/original/people-volunteering-donating-money_53876-43052_%281%29.jpg?1707847479" width="250">
+
+
+    <hr>
+
+    <h3>About us</h3>
+   <div>
+    <p><em><strong>Helping Hand</strong></em> is a lifeline for those struggling with poverty and homelessness,
+        providing essential resources and support with unwavering compassion. Our charity organization tirelessly 
+        collects and distributes food, clothing, toiletries, and other basic necessities to individuals and families in need. 
+        With a dedicated team of volunteers and generous donors, the <em><strong>Helping Hand</strong></em> ensures that no one 
+        goes without the essentials for survival and dignity. Our outreach efforts extend beyond material aid, offering a 
+        sense of community and solidarity to those facing difficult circumstances. Through their selfless actions, <em><strong>Helping Hand</strong></em>
+        brings comfort and relief to countless lives, embodying the spirit of empathy and kindness.</p>
+   </div>
+   <br>
+
+   <div id="giver">
+
+    <p>
+        You too can lend a helping hand and make an impact in our community by simply donating goods or becoming a volunteer.
+        Click the button below to leave your contact details and we will contact you.</p>
+    <button id="give">
+        Become a Giver!!
+    </button>
+
+   </div>
+   <br>
+    <div id="help">
+
+        <p>For those in need of help, know that you are not alone. Simply click the button below, leave your contact details and we will contact you. </p>
+        
+        <button id="helper"> 
+            Let us help you.
+        </button>
+    
+    </div>
+    
+    <br><br><br>
+
+    <hr>
+    
+    <footer>
+        <ul>
+            <li>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhome" target="_blank">Twitter</a>
+            </li>
+            <li>
+                <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </li>
+
+        </ul>
+        
+        
+       
+
+        <br>
+
+        Coded by Tanyaradzwa Chigwida
+    </footer>
+
+    <script>
+
+        function volunteer(){
+
+            let fullname = prompt("What is your full name?");
+        let age = prompt("How old are you?");
+        let location = prompt("Which city do you live in?");
+        let contact = prompt ("What is your email address or cell number?");
+        let action = prompt("How would you like to contribute to our cause? 😃");
+        
+
+        if(age <= 18){
+            alert("Hello " + fullname +" from " + location + "👋👋. We are always thrilled to have young people like you, join our team!!💃🏽  We will be in touch.😃" );
+        }else{
+            alert("Hello " + fullname +" from " + location + "👋👋. We are so excited that you have decided to join us in making a difference!!💃🏽  We will be in touch.😃" );
+        }
+
+        }
+        let volButton = document.querySelector("#give");
+        volButton.addEventListener("click", volunteer);
+ 
+
+        function donate(){
+
+        let fullname = prompt("What is your full name?");
+        let age = prompt("How old are you?");
+        let location = prompt("Which city do you live in?");
+        let contact = prompt ("What is your email address or cell number?");
+        let action = prompt("How can we help you? 😃");
+
+        alert("Hello " + fullname +" from " + location + "👋👋. Thank you for reaching out to us and trusting us to help you. We will be in touch.😃" );
+
+        }
+        let givButton = document.querySelector("#helper");
+        givButton.addEventListener("click", donate);
+
+        
+
+
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+<body>
+
+    <h1>JS Objects</h1>
+
+    <script>
+        let city = [
+        {
+            name: "Joburg",
+            country: "South Africa",
+            year: 1887,
+            population: '50 000 000',
+            zuluSpeak: true,
+        },
+        {
+            name: "Mexico City",
+            country: "Mexico",
+            year: 1897,
+            population: '51 000 000',
+            zuluSpeak: false,
+    
+        },
+    ];
+
+        console.log(city[0].name);
+        console.log(city[1].name);
+        console.log(city[1].country);
+        console.log(city[1].population);
+
+        let student = {
+            name: "Tanya",
+            surname: "Chigwida",
+            age: 27,
+            course: "Software Engineering",
+            string: function(){
+                return this.name + " " + this.surname;
+            }
+        };
+    
+        console.log(student.string);
+
+
+  let weather = new Object();{
+  console.log(weather);
+  };
+
+
+       
+        
+    </script>
+
+
+
+    
+</body>
+</html>
